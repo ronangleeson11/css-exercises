@@ -46,3 +46,34 @@ html {
   color: white;
   text-align: left;
 }
+
+.container {
+  display: grid;
+  gap: 1vh;
+  grid-column: 20vw 80vw;
+  grid-template: 9vh 9vh 67vh 9vh / 19vw 78vw;
+  grid-template-areas:  "header header"
+                        "sidebar nav"
+                        "sidebar article"
+                        "footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.article {
+  grid-area: article;
+}
+
+.footer {
+  grid-area: footer;
+}
